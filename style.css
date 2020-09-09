@@ -1,0 +1,41 @@
+body 
+{ 
+  background-color:rgb(150, 184, 184);
+  
+}
+h1 { 
+  display:block; 
+  width:300px; 
+  margin:20px auto; 
+  padding-bottom:20px; 
+  color:rgb(0, 0, 0); 
+  text-shadow: 1px 2px 3px  #ccc;
+  border-bottom:1px solid #cbcbcb;
+}
+
+#container {
+    width:600px; margin:0 auto; 
+  }
+#Canvas { 
+  background:white;
+  border:1px solid black; 
+}
+
+.buttons{
+
+  display: flex;
+  width: 400px;
+  justify-content: space-evenly;
+  align-content: center;
+  align-items: center;
+  margin-left: 30%;
+  margin-top:1%;
+
+}
+
+button{
+  background-color: white;
+  padding:10 10 10 10;
+ 
+
+}

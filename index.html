@@ -1,0 +1,56 @@
+<script type="text/javascript">
+    var con;
+    var dx=3;
+    var dy=2;
+    var y=150;
+    var x=50;
+    function draw()
+    {
+        con= Canvas.getContext('2d');
+        con.clearRect(0,0,600,300);
+        con.beginPath();
+        con.fillStyle="red";
+        con.arc(x,y,15,0,Math.PI*2,true);
+        con.closePath();
+        con.fill();
+        if( x<0 || x>600)
+            {
+                dx=-dx;
+                con.fillStyle="black";
+                con.fill()
+            
+            }
+        if( y<0 || y>300)
+            {
+                dy=-dy;
+                con.fillStyle="green";
+                con.fill()
+            }
+            
+            x+=dx;
+            y+=dy;
+        }
+    setInterval(draw,15); 
+    </script>
+    <!DOCTYPE html>
+    <html>
+    <head>
+   
+    <title>Bouncing Ball</title>
+    <link rel="stylesheet" href="style.css  ">
+    </head>
+    <body>
+    <h1>Bouncing a Ball </h1>
+    <div id="container">
+        
+        <canvas id="Canvas" width="600" height="300"></canvas>
+    
+    </div>
+    <div class="buttons">
+        <button type="button">Increase Speed in X dir</button>
+        <button type="button">Increase speed in Y dir</button>
+    </div>
+    
+    </body>
+    </html>
+    
